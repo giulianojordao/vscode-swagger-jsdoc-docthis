@@ -19,7 +19,7 @@
 - Fix @type and `@memberOf` being emitted on the same line.
 
 ### 0.4.5
-- Add support of `@author` tag. Controlled using `docthis.includeAuthorTag` and `docthis.authorName` options.
+- Add support of `@author` tag. Controlled using `swaggerjsdocdocthis.includeAuthorTag` and `swaggerjsdocdocthis.authorName` options.
 - No more unecessary jump lines for other tags than `@description` (to match use from usejsdoc.org)
 
 ### 0.4.4
@@ -41,10 +41,10 @@
 ### 0.3.11
 - Support new documents that have not been saved to disk.
 - Fixes support for `.vue` files and adds support for `.es6` files.
-- Fixes issue with `docthis.automaticForBlockComments` failing to trigger.
+- Fixes issue with `swaggerjsdocdocthis.automaticForBlockComments` failing to trigger.
 
 ### 0.3.10
-- Adds option to infer param and return types from names when no type info is available. Controlled using the `docthis.inferTypesFromNames` option.
+- Adds option to infer param and return types from names when no type info is available. Controlled using the `swaggerjsdocdocthis.inferTypesFromNames` option.
 
 ### 0.3.7
 - Upgraded TypeScript and VSCode internals.
@@ -53,19 +53,19 @@
 - Adds `.vue` extension support.
 
 ### 0.3.5
-- Adds support for hungarian notation for functions and methods. Controlled using the `docthis.enableHungarianNotationEvaluation` option.
+- Adds support for hungarian notation for functions and methods. Controlled using the `swaggerjsdocdocthis.enableHungarianNotationEvaluation` option.
 
 ### 0.3.4
-- Adds support for including a `@description` tag for functions and methods. Controlled using the `docthis.includeDescriptionTag` option.
+- Adds support for including a `@description` tag for functions and methods. Controlled using the `swaggerjsdocdocthis.includeDescriptionTag` option.
 
 ### 0.3.3
-- Adds support for jumping to the description location of the inserted comment. Controlled using the `docthis.enableJumpToDescriptionLocation` option.
-- Adds support for the @memberOf tag for properties and methods of a class. Controlled using the `docthis.includeMemberOfOnClassMembers` option.
-- Adds support for the @memberOf tag for properties and methods of an interface. Controlled using the `docthis.includeMemberOfOnInterfaceMembers` option.
+- Adds support for jumping to the description location of the inserted comment. Controlled using the `swaggerjsdocdocthis.enableJumpToDescriptionLocation` option.
+- Adds support for the @memberOf tag for properties and methods of a class. Controlled using the `swaggerjsdocdocthis.includeMemberOfOnClassMembers` option.
+- Adds support for the @memberOf tag for properties and methods of an interface. Controlled using the `swaggerjsdocdocthis.includeMemberOfOnInterfaceMembers` option.
 
 ### 0.3.2
-- Adds a config option `docthis.automaticForBlockComments` used to disable automatic comments for `/**`.
-- Adds a config option `docthis.includeTypes` used to disable insertion of type names in tags.
+- Adds a config option `swaggerjsdocdocthis.automaticForBlockComments` used to disable automatic comments for `/**`.
+- Adds a config option `swaggerjsdocdocthis.includeTypes` used to disable insertion of type names in tags.
 
 ### 0.3.1
 - Fix an indenting issue with `/**` output.

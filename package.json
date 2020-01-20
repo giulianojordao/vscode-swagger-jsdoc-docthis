@@ -1,7 +1,7 @@
 {
-  "name": "swagger-jsdoc-docthis",
+  "name": "swaggerjsdocdocthis",
   "displayName": "Swagger JsDoc Document this",
-  "description": "Automatically generates detailed JSDoc comments in TypeScript and JavaScript files to be used in swagger-ui-express projects.",
+  "description": "Gera automaticamente comentários JSDoc detalhados em arquivos TypeScript e JavaScript para serem usados em projetos swagger-ui-express.",
   "version": "0.7.2",
   "publisher": "giulianojordao",
   "icon": "images/icon.png",
@@ -26,24 +26,24 @@
   "contributes": {
     "commands": [
       {
-        "command": "docthis.documentThis",
-        "title": "Document This"
+        "command": "swaggerjsdocdocthis.documentThis",
+        "title": "Swagger JsDoc Document This"
       },
       {
-        "command": "docthis.traceTypeScriptSyntaxNode",
+        "command": "swaggerjsdocdocthis.traceTypeScriptSyntaxNode",
         "title": "Trace TypeScript Syntax Node"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "docthis.documentThis"
+          "command": "swaggerjsdocdocthis.documentThis"
         }
       ]
     },
     "keybindings": [
       {
-        "command": "docthis.documentThis",
+        "command": "swaggerjsdocdocthis.documentThis",
         "key": "ctrl+alt+d ctrl+alt+d"
       }
     ],
@@ -51,50 +51,50 @@
       "type": "object",
       "title": "Document This configuration",
       "properties": {
-        "docthis.includeTypes": {
+        "swaggerjsdocdocthis.includeTypes": {
           "type": "boolean",
           "default": true,
-          "description": "When enabled, type information is added to comment tags."
+          "description": "Quando ativada, informações tipadas são adicionadas no commentario."
         },
-        "docthis.includeMemberOfOnClassMembers": {
+        "swaggerjsdocdocthis.includeMemberOfOnClassMembers": {
           "type": "boolean",
           "default": true,
-          "description": "When enabled, memberOf information is added to comment tags on class members."
+          "description": "Quando ativada, as informações memberOf são adicionadas às tags de comentários dos membros da classe."
         },
-        "docthis.includeMemberOfOnInterfaceMembers": {
+        "swaggerjsdocdocthis.includeMemberOfOnInterfaceMembers": {
           "type": "boolean",
           "default": true,
-          "description": "When enabled, memberOf information is added to comment tags on interface members."
+          "description": "Quando ativada, as informações memberOf são adicionadas às tags de comentários nos membros da interface."
         },
-        "docthis.includeDescriptionTag": {
+        "swaggerjsdocdocthis.includeDescriptionTag": {
           "type": "boolean",
           "default": false,
-          "description": "When enabled, JSDoc comments for functions and methods will include @description."
+          "description": "Quando ativado, os comentários JSDoc para funções e métodos incluirão @description."
         },
-        "docthis.enableHungarianNotationEvaluation": {
+        "swaggerjsdocdocthis.enableHungarianNotationEvaluation": {
           "type": "boolean",
           "default": false,
-          "description": "When enabled, hungarian notation will be used as a type hint."
+          "description": "Quando ativada, a notação húngara será usada como uma dica de tipo."
         },
-        "docthis.inferTypesFromNames": {
+        "swaggerjsdocdocthis.inferTypesFromNames": {
           "type": "boolean",
           "default": false,
           "description": "When enabled, will use names of params & methods as type hints."
         },
-        "docthis.includeAuthorTag": {
+        "swaggerjsdocdocthis.includeAuthorTag": {
           "type": "boolean",
           "default": false,
-          "description": "When enabled, will add the @author tag."
+          "description": "Quando ativado, usará nomes de parâmetros e métodos como dicas de tipo."
         },
-        "docthis.authorName": {
+        "swaggerjsdocdocthis.authorName": {
           "type": "string",
-          "default": "(Set the text for this tag by adding docthis.authorName to your settings file.)",
-          "description": "When docthis.includeAuthorTag is enabled, will add @author tag with this value."
+          "default": "(Defina o texto para essa tag adicionando swaggerjsdocdocthis.authorName ao seu arquivo de configurações.)",
+          "description": "When swaggerjsdocdocthis.includeAuthorTag is enabled, will add @author tag with this value."
         },
-        "docthis.includeDateTag": {
+        "swaggerjsdocdocthis.includeDateTag": {
           "type": "boolean",
           "default": false,
-          "description": "When enabled, will add the @date tag in YYYY-MM-DD format."
+          "description": "Quando ativado, adicionará a tag @date no formato AAAA-MM-DD."
         }
       }
     }
@@ -115,10 +115,10 @@
     "typescript": "^2.9.1"
   },
   "bugs": {
-    "url": "https://github.com/joelday/vscode-docthis/issues"
+    "url": "https://github.com/giulianojordao/vscode-swaggerjsdocdocthis./issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joelday/vscode-docthis"
+    "url": "https://github.com/giulianojordao/vscode-swaggerjsdocdocthis."
   }
 }
